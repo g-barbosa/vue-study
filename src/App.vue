@@ -1,36 +1,69 @@
 <template>
   <div id="app">
-    <h1>{{titulo}}</h1>
-    <h2>{{subtitulo}}</h2>
-    <div v-if="tarefas.length <= 0">
-      Não há tarefas
-    </div>
-    <div v-else>
-      Existem {{tarefas.lenth}} tarefas
-      <ul>
-        <li :key="tarefa" v-for="tarefa in tarefas"> {{tarefa}} </li>
-      </ul>
-    </div>
-    <input :disabled="tarefas.length == 0" v-model="subtitulo" type="text" placeholder="descricao">
-    <button @click="tarefas = []">Limpar</button>
+    <p>Nome iniciado: {{nome}}</p>
+    <p>Nome filtrado: {{nome | formataNome}}</p>
+
+    <p>Nome computado: {{nomeFormatado}}</p>
+    <label>Input a computar</label>
+    <input v-model="nomeFormatado" type="text">
+    <br>
+    <br>
+    <input v-model="busca" type="text">
+    <p v-text="resultado"></p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'lv-tarefas',
+  name: 'lv-contador',
   data () {
     return {
-      titulo: 'Listagem de tarefas',
-      subtitulo: 'Defina uma descrição',
-      tarefas: []
+      nome: 'jose antonio',
+      resultado: '',
+      busca: ''
     }
   },
-  mounted () {
-    setTimeout( () => {
-      this.titulo = 'Novo titulo'
-      this.tarefas = ['tarefa 1', 'tarefa 2', 'tarefa 3', 'tarefa 4']
-    }, 3000)
+  methods: {
+    calcula (sinal) {
+      this.total = (sinal == '0') ? this.total - 1 : this.total + 1
+    },
+    recolheResposta() {
+      let valor = this.busca
+      setTimeout( () => {
+        if (valor === this.busca)
+          this.resultado = ''
+      }, 200)
+    }
+  },
+  filters: {
+    formataNome(valor) {
+      console.log('executando filter')
+      valor = valor.toLowerCase()
+      let corta = valor.split(' ')
+      let resultado = ''
+
+      for (let nome of corta) {
+        resultado += nome.charAt(0).toUpperCase() + nome.slice(1) + ' '
+      }
+      return resultado
+    }
+  },
+  computed: {
+    nomeFormatado: {
+      get: function () {
+        console.log('executando computed')
+        return this.nome.toUpperCase()
+      },
+      set: function (novoValor) {
+        this.nome = novoValor.substring(0, 3)
+      }
+    }
+  },
+  watch: {
+    busca: function (novoValor, valorAntigo) {
+      this.resultado = 'digitando...'
+      this.recolheResposta()
+    }
   }
 }
 </script>
