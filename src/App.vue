@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{titulo}}</h1>
-    <h2>{{subtitulo}}</h2>
-    <div v-if="tarefas.length <= 0">
-      Não há tarefas
-    </div>
-    <div v-else>
-      Existem {{tarefas.lenth}} tarefas
-      <ul>
-        <li :key="tarefa" v-for="tarefa in tarefas"> {{tarefa}} </li>
-      </ul>
-    </div>
-    <input :disabled="tarefas.length == 0" v-model="subtitulo" type="text" placeholder="descricao">
-    <button @click="tarefas = []">Limpar</button>
+    <p>Todos os capitulos do livro estao separados em branchs</p>
   </div>
 </template>
 
@@ -21,16 +9,7 @@ export default {
   name: 'lv-tarefas',
   data () {
     return {
-      titulo: 'Listagem de tarefas',
-      subtitulo: 'Defina uma descrição',
-      tarefas: []
     }
-  },
-  mounted () {
-    setTimeout( () => {
-      this.titulo = 'Novo titulo'
-      this.tarefas = ['tarefa 1', 'tarefa 2', 'tarefa 3', 'tarefa 4']
-    }, 3000)
   }
 }
 </script>

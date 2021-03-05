@@ -1,17 +1,19 @@
-# helloword
+# Estudo de Vue.js
 
-> A Vue.js project
+> Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"
 
-## Build Setup
+Este repositório está separado por branches. Os temas estão separados em capítulos e os capítulos estão separados em branches.
+
+## Como rodar
 
 ``` bash
-# install dependencies
+# instalar as dependências
 npm install
 
-# serve with hot reload at localhost:8080
+# rodar o servidor em localhost:8080
 npm run dev
 
-# build for production with minification
+# buildar
 npm run build
 ```
 
