@@ -4,6 +4,12 @@
 
 Este repositório está separado por branches. Os temas estão separados em capítulos e os capítulos estão separados em branches.
 
+Sumário:
+[Home](https://github.com/g-barbosa/vue-study)
+[Criando e exibindo dados](https://github.com/g-barbosa/vue-study/tree/criando-exibindo-dados)
+[Manipulando dados](https://github.com/g-barbosa/vue-study/tree/manipulando-dados)
+[Componentes juntos são mais fortes](https://github.com/g-barbosa/vue-study/tree/componentes)
+
 ## Como rodar
 
 ``` bash
