@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <LVBusca/>
+    <hr>
+    <LVPerfil/>
   </div>
 </template>
 
 <script>
+import LVBusca from './LVBusca.vue'
+import LVPerfil from './LVPerfil.vue'
 export default {
-  name: 'lv-tarefas',
-  data () {
-    return {
-    }
-  }
+  name: 'app',
+  components: {LVBusca, LVPerfil}
 }
 </script>
 
