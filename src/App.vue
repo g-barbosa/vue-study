@@ -1,14 +1,29 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <LVUsuario nome='Filomena' @novaMSG='escrever'/>
+    <LVUsuario nome='Giovanne' @novaMSG='escrever'/>
+    <br>
+    <div v-html="chat"></div>
   </div>
 </template>
 
 <script>
+import LVCartao from './LVCartao.vue'
+import LVComentarios from './LVComentarios.vue'
+import LVLeitor from './LVLeitor.vue'
+import LVLista from './LVLista.vue'
+import LVUsuario from './LVUsuario.vue'
 export default {
-  name: 'lv-tarefas',
+  components: { LVLista, LVCartao, LVLeitor, LVComentarios, LVUsuario },
+  name: 'app',
   data () {
     return {
+      chat: ''
+    }
+  },
+  methods: {
+    escrever(mensagem) {
+      this.chat = mensagem + '<hr>' + this.chat
     }
   }
 }
