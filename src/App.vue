@@ -1,16 +1,14 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <router-link to='/'>Inicial</router-link>
+    <router-link to='/usuarios'>Usuarios</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'lv-tarefas',
-  data () {
-    return {
-    }
-  }
+  name: 'app',
 }
 </script>
 
