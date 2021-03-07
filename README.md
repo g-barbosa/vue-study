@@ -1,4 +1,4 @@
-# Estudo de Vue.js
+# Cada  um segue seu caminho, com rotas!
 
 > Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"
 
