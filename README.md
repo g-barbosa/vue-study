@@ -10,6 +10,7 @@ Sumário:
 * [Manipulando dados](https://github.com/g-barbosa/vue-study/tree/manipulando-dados)
 * [Componentes juntos são mais fortes](https://github.com/g-barbosa/vue-study/tree/componentes)
 * [Reutilizando Componentes](https://github.com/g-barbosa/vue-study/tree/reutilizando-componentes)
+* [Cada  um segue seu caminho, com rotas!](https://github.com/g-barbosa/vue-study/tree/rotas)
 
 ## Como rodar
 
