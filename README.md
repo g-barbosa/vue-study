@@ -1,4 +1,4 @@
-# Estudo de Vue.js
+# Reutilizando Componentes
 
 > Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"
 
@@ -9,6 +9,7 @@ Sumário:
 * [Criando e exibindo dados](https://github.com/g-barbosa/vue-study/tree/criando-exibindo-dados)
 * [Manipulando dados](https://github.com/g-barbosa/vue-study/tree/manipulando-dados)
 * [Componentes juntos são mais fortes](https://github.com/g-barbosa/vue-study/tree/componentes)
+* [Reutilizando Componentes](https://github.com/g-barbosa/vue-study/tree/reutilizando-componentes)
 
 ## Como rodar
 
