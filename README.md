@@ -11,6 +11,7 @@ Sumário:
 * [Componentes juntos são mais fortes](https://github.com/g-barbosa/vue-study/tree/componentes)
 * [Reutilizando Componentes](https://github.com/g-barbosa/vue-study/tree/reutilizando-componentes)
 * [Cada  um segue seu caminho, com rotas!](https://github.com/g-barbosa/vue-study/tree/rotas)
+* [Gerenciamento de estado com Vuex](https://github.com/g-barbosa/vue-study/tree/vuex)
 
 ## Como rodar
 
