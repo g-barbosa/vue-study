@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <AddTarefa/>
+    <Tarefas/>
+    <Busca/>
   </div>
 </template>
 
 <script>
+import AddTarefa from './AddTarefa.vue'
+import Busca from './Busca.vue'
+import Tarefas from './Tarefas.vue'
 export default {
-  name: 'lv-tarefas',
-  data () {
-    return {
-    }
-  }
+  components: { AddTarefa, Tarefas, Busca },
+  name: 'app',
 }
 </script>
 

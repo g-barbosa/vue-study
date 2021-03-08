@@ -1,4 +1,4 @@
-# Estudo de Vue.js
+# Gerenciamento de estado com Vuex
 
 > Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"
 
