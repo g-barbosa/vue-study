@@ -6,11 +6,7 @@
 
 <script>
 export default {
-  name: 'lv-tarefas',
-  data () {
-    return {
-    }
-  }
+  name: 'App',
 }
 </script>
 
