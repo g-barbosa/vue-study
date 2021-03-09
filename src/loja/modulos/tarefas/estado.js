@@ -1,3 +1,3 @@
 export default {
-  nome: 'VueJS'
+  tarefas: [],
 }

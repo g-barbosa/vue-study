@@ -1,11 +1,12 @@
 <template>
   <div>
      <input type="text" v-model='tarefa'>
-    <button @click="adicionar">Adicionar</button>
+    <button @click="submeterTarefa">Adicionar</button>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   name: 'AddTarefa',
   data() {
@@ -14,9 +15,12 @@ export default {
     }
   },
   methods: {
-    adicionar() {
-      if (this.tarefa != '') {
-        this.$store.commit('ADD_TAREFA', this.tarefa)
+    ...mapActions({
+      adicionar: 'adicionarTarefa'
+    }),
+    submeterTarefa() {
+      if(this.tarefa != '') {
+        this.adicionar(this.tarefa)
       }
       this.tarefa = ''
     }

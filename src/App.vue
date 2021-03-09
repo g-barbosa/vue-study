@@ -10,9 +10,15 @@
 import AddTarefa from './AddTarefa.vue'
 import Busca from './Busca.vue'
 import Tarefas from './Tarefas.vue'
+import { mapState } from 'vuex'
 export default {
   components: { AddTarefa, Tarefas, Busca },
   name: 'app',
+  computed: {
+    ...mapState({
+      name:'nome'
+    })
+  }
 }
 </script>
 

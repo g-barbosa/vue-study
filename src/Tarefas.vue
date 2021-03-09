@@ -11,13 +11,14 @@
 
 <script>
 import DelTarefa from './DelTarefa.vue'
+import { mapGetters } from 'vuex'
 export default {
   name: 'Tarefas',
   components: {DelTarefa},
   computed: {
-    tarefas() {
-      return this.$store.getters.listaTarefas
-    }
+    ...mapGetters({
+      tarefas: 'listaTarefas'
+    })
   }
 }
 </script>
