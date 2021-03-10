@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <Lista titulo="Carros" :lista="carros"/>
+    <Lista titulo="Avioes" :lista="avioes"/>
   </div>
 </template>
 
 <script>
+import Carro from './servicos/carros'
+import Aviao from './servicos/avioes'
+import Lista from './Lista.vue'
 export default {
   name: 'App',
+  components: { Lista },
+  data() {
+    return {
+      carros: {},
+      avioes: {}
+    }
+  },
+  mounted() {
+    Carro.lista().then(dado => this.carros = dado.data)
+    Aviao.lista().then(dado => this.avioes = dado.data)
+  }
 }
 </script>
 
