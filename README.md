@@ -1,4 +1,4 @@
-# Estudo de Vue.js
+# Acrescentando funcionalidades
 
 > Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"
 
