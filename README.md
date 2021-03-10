@@ -13,6 +13,7 @@ Sumário:
 * [Cada  um segue seu caminho, com rotas!](https://github.com/g-barbosa/vue-study/tree/rotas)
 * [Gerenciamento de estado com Vuex](https://github.com/g-barbosa/vue-study/tree/vuex)
 * [Criando e dividindo serviços](https://github.com/g-barbosa/vue-study/tree/criando-dividindo-servicos)
+* [Acrescentando funcionalidades](https://github.com/g-barbosa/vue-study/tree/acrescentando-funcionalidades)
 
 ## Como rodar
 
