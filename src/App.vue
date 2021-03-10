@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <div v-formato.maiusculo>teste</div>
+    <div v-formato.capitalizado>teste teste</div>
+    <div v-formato.minusculo>teste</div>
+    <br>
+    <div v-formato.minusculo v-ola>Meu texto {{$ola()}}</div>
   </div>
 </template>
 
