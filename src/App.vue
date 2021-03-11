@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <p>Todos os capitulos do livro estao separados em branchs</p>
+    <p>Total: {{ total }}</p>
+    <button @click="subtrair"> - </button>
+    <button @click="somar"> + </button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
+  data() {
+    return { total: 0}
+  },
+  methods: {
+    subtrair() {
+      this.total --
+    },
+    somar() {
+      this.total ++
+    }
+  }
 }
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
