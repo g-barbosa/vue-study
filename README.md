@@ -15,6 +15,7 @@ Sumário:
 * [Criando e dividindo serviços](https://github.com/g-barbosa/vue-study/tree/criando-dividindo-servicos)
 * [Acrescentando funcionalidades](https://github.com/g-barbosa/vue-study/tree/acrescentando-funcionalidades)
 * [Introdução a testes](https://github.com/g-barbosa/vue-study/tree/introducao-testes)
+* [Alguns recursos escondidos](https://github.com/g-barbosa/vue-study/tree/recursos-escondidos)
 
 ## Como rodar
 
