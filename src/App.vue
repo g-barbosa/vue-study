@@ -1,8 +1,7 @@
 <template>
-  <div id="app">
-    <p>Total: {{ total }}</p>
-    <button @click="subtrair"> - </button>
-    <button @click="somar"> + </button>
+  <div id="app" v-on:keyup.f2="visivel = !visivel">
+    <input>
+    <p v-if="visivel" >voce clicou em f2</p>
   </div>
 </template>
 
@@ -10,16 +9,8 @@
 export default {
   name: 'App',
   data() {
-    return { total: 0}
+    return { visivel: false}
   },
-  methods: {
-    subtrair() {
-      this.total --
-    },
-    somar() {
-      this.total ++
-    }
-  }
 }
 </script>
 
