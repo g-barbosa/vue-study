@@ -2,12 +2,20 @@
   <div id="app" v-on:keyup.f2="visivel = !visivel">
     <input>
     <p v-if="visivel" >voce clicou em f2</p>
+    <ComponenteA/>
+    <ComponenteB/>
   </div>
 </template>
 
 <script>
+import ComponenteA from './ComponenteA'
+import ComponenteB from './ComponenteB'
 export default {
   name: 'App',
+  components: {
+    ComponenteA,
+    ComponenteB
+  },
   data() {
     return { visivel: false}
   },
