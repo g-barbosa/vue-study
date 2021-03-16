@@ -1,4 +1,4 @@
-# Estudo de Vue.js
+# Alguns recursos escondidos
 
 > Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"
 
