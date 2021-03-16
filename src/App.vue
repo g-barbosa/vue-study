@@ -2,8 +2,9 @@
   <div id="app" v-on:keyup.f2="visivel = !visivel">
     <input>
     <p v-if="visivel" >voce clicou em f2</p>
-    <ComponenteA/>
+    <ComponenteA ref="a"/>
     <ComponenteB/>
+    <p @click.prevent="mostraTitulo">{{ref}}</p>
   </div>
 </template>
 
@@ -17,7 +18,14 @@ export default {
     ComponenteB
   },
   data() {
-    return { visivel: false}
+    return { visivel: false, ref: 'teste'}
+  },
+  methods: {
+    mostraTitulo() {
+      const a = this.$refs
+      console.log(a.a)
+      this.ref = this.$refs.a.titulo
+    }
   },
 }
 </script>
