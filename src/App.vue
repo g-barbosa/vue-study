@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Aplicando exemplos demonstrados no livro "Front-end com Vue.js: Da teoria à prática sem complicações"</h1>
     <p>Acesse as branches para ver o que cada capitulo aborda</p>
   </div>
 </template>
