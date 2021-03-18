@@ -6,6 +6,10 @@
     <ComponenteB/>
     <p @click.prevent="mostraTitulo">{{ref}}</p>
     <button @click="atualizar">Atualizar</button>
+    <p v-pre>{{teste v-pre}}</p>
+    <li :key="chave" v-for="(item, chave, indice) in objetos">
+      {{chave}} - {{item.id}} - {{indice}} - {{item.nome}}
+    </li>
   </div>
 </template>
 
@@ -19,7 +23,15 @@ export default {
     ComponenteB
   },
   data() {
-    return { visivel: false, ref: 'teste', cor: 'red'}
+    return {
+      visivel: false, 
+      ref: 'teste', cor: 'red',
+      objetos: {
+        um: {id: 1, nome: 'jose'},
+        dois: {id: 2, nome: 'gio'},
+        tres: {id: 3, nome: 'teeset'},
+      }
+    }
   },
   methods: {
     mostraTitulo() {
